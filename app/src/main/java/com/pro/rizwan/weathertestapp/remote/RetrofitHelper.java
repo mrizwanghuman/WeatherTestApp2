@@ -18,10 +18,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitHelper {
 
-    private static final String BASE_URL_CUR_WEATHER ="https://api.darksky.net/forecast/";
+    private String BASE_URL_CUR_WEATHER ;
+    private String apiKey;
 
+    public RetrofitHelper(String apikey, String baseUrl) {
+        this.apiKey= apikey;
+        this.BASE_URL_CUR_WEATHER= baseUrl;
 
-
+    }
 
     private static OkHttpClient httpClientConfig(HttpLoggingInterceptor interceptor){
        // File httpCache = new File(Context.getExternalCacheDir().getAbsolutePath() + "/tile_cache");
@@ -39,7 +43,7 @@ public class RetrofitHelper {
         return  httpLoggingInterceptor;
     }
 
-    private static Retrofit createConfig(){
+    private Retrofit createConfig(){
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL_CUR_WEATHER)
                 .client(httpClientConfig(loggingInterceptor()))
@@ -50,7 +54,7 @@ public class RetrofitHelper {
     }
 
 
-    public  static Observable<WeatherModel> getForecast(String apiKey, double latitude, double longitude){
+    public Observable<WeatherModel> getForecast( double latitude, double longitude){
         Retrofit retrofit = createConfig();
         RemoteService remoteService = retrofit.create(RemoteService.class);
         return remoteService.getCurrentWeather(apiKey, latitude, longitude);

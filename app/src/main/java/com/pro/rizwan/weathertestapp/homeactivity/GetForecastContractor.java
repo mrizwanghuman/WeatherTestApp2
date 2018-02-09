@@ -1,7 +1,5 @@
 package com.pro.rizwan.weathertestapp.homeactivity;
 
-
-import com.pro.rizwan.weathertestapp.model.Currently;
 import com.pro.rizwan.weathertestapp.model.Daily;
 
 import com.pro.rizwan.weathertestapp.utils.BasePresenter;

@@ -13,6 +13,8 @@ import com.pro.rizwan.weathertestapp.remote.RetrofitHelper;
 import com.pro.rizwan.weathertestapp.utils.Constants;
 
 
+import javax.inject.Inject;
+
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
@@ -21,10 +23,13 @@ import io.reactivex.schedulers.Schedulers;
 
 public class ForeCastPresenter implements GetForecastContractor.Presenter {
     private GetForecastContractor.View view;
-
+RetrofitHelper retrofitHelper;
     private Daily dailyForecast;
 
-
+    @Inject
+    public ForeCastPresenter(RetrofitHelper retrofitHelper) {
+        this.retrofitHelper = retrofitHelper;
+    }
 
     @Override
     public void onAttachView(GetForecastContractor.View view) {
@@ -39,7 +44,7 @@ this.view=null;
     @Override
     public void getForecast(double latitude, double longitude) {
 
-        RetrofitHelper.getForecast(Constants.apiKey,latitude, longitude).observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io())
+        retrofitHelper.getForecast(latitude, longitude).observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io())
                 .subscribe(new Observer<WeatherModel>() {
                     @Override
                     public void onSubscribe(Disposable d) {
