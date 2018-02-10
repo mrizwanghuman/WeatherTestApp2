@@ -10,7 +10,7 @@ import com.pro.rizwan.weathertestapp.model.Daily;
 
 import com.pro.rizwan.weathertestapp.model.WeatherModel;
 import com.pro.rizwan.weathertestapp.remote.RetrofitHelper;
-import com.pro.rizwan.weathertestapp.utils.Constants;
+
 
 
 import javax.inject.Inject;
@@ -23,7 +23,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class ForeCastPresenter implements GetForecastContractor.Presenter {
     private GetForecastContractor.View view;
-RetrofitHelper retrofitHelper;
+private RetrofitHelper retrofitHelper;
     private Daily dailyForecast;
 
     @Inject
