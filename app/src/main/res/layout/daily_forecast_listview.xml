@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:background="@android:color/holo_blue_light"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvHighTemprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imIcon"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLowTemprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imIcon"
+        android:layout_alignLeft="@+id/tvHighTemprature"
+        android:layout_alignStart="@+id/tvHighTemprature"
+        android:layout_marginBottom="12dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvLowTemprature"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_toLeftOf="@+id/imIcon"
+        android:layout_toStartOf="@+id/imIcon"
+
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imIcon"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+         />
+
+</RelativeLayout>
