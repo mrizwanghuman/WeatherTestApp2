@@ -10,7 +10,7 @@
     android:background="@drawable/sandiego"
  android:padding="20dp"
     android:orientation="vertical"
-    tools:context="com.pro.rizwan.weathertestapp.fragments.DayForecastFragment">
+    tools:context=".view.fragments.DayForecastFragment">
 
 
     <TextView

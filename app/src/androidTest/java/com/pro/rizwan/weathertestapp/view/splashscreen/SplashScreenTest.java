@@ -1,4 +1,4 @@
-package com.pro.rizwan.weathertestapp.splashscreen;
+package com.pro.rizwan.weathertestapp.view.splashscreen;
 
 import android.app.Activity;
 import android.app.Instrumentation;
@@ -6,8 +6,7 @@ import android.support.test.rule.ActivityTestRule;
 import android.view.View;
 
 import com.pro.rizwan.weathertestapp.R;
-import com.pro.rizwan.weathertestapp.homeactivity.HomeActivity;
-import com.pro.rizwan.weathertestapp.splashscreen.SplashScreen;
+import com.pro.rizwan.weathertestapp.view.homeactivity.HomeActivity;
 
 import org.junit.After;
 import org.junit.Before;

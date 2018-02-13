@@ -1,4 +1,4 @@
-package com.pro.rizwan.weathertestapp.homeactivity;
+package com.pro.rizwan.weathertestapp.view.homeactivity;
 
 
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 import com.pro.rizwan.weathertestapp.R;
 import com.pro.rizwan.weathertestapp.WeatherAppApplication;
-import com.pro.rizwan.weathertestapp.fragments.DayForecastFragment;
+import com.pro.rizwan.weathertestapp.view.fragments.DayForecastFragment;
 
 
 import com.pro.rizwan.weathertestapp.model.Daily;

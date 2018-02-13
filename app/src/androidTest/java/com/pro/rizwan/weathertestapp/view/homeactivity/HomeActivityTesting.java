@@ -1,4 +1,4 @@
-package com.pro.rizwan.weathertestapp.homeactivity;
+package com.pro.rizwan.weathertestapp.view.homeactivity;
 
 
 import android.support.test.espresso.DataInteraction;
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 
 import com.pro.rizwan.weathertestapp.R;
-import com.pro.rizwan.weathertestapp.homeactivity.HomeActivity;
+import com.pro.rizwan.weathertestapp.view.homeactivity.HomeActivity;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;

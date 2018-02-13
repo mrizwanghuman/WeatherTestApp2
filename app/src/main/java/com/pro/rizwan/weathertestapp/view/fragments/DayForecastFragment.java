@@ -1,4 +1,4 @@
-package com.pro.rizwan.weathertestapp.fragments;
+package com.pro.rizwan.weathertestapp.view.fragments;
 
 
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.pro.rizwan.weathertestapp.homeactivity;
+package com.pro.rizwan.weathertestapp.view.homeactivity;
 
 import android.support.test.rule.ActivityTestRule;
 import android.widget.FrameLayout;

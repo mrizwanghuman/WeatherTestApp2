@@ -1,11 +1,11 @@
-package com.pro.rizwan.weathertestapp.fragments;
+package com.pro.rizwan.weathertestapp.view.fragments;
 
 import android.support.test.rule.ActivityTestRule;
 import android.view.View;
 import android.widget.FrameLayout;
 
 import com.pro.rizwan.weathertestapp.R;
-import com.pro.rizwan.weathertestapp.homeactivity.HomeActivity;
+import com.pro.rizwan.weathertestapp.view.homeactivity.HomeActivity;
 
 import org.junit.After;
 import org.junit.Before;

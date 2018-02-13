@@ -1,6 +1,6 @@
 package com.pro.rizwan.weathertestapp.injection.module.module;
 
-import com.pro.rizwan.weathertestapp.homeactivity.ForeCastPresenter;
+import com.pro.rizwan.weathertestapp.view.homeactivity.ForeCastPresenter;
 import com.pro.rizwan.weathertestapp.remote.RetrofitHelper;
 
 import dagger.Module;

@@ -1,4 +1,4 @@
-package com.pro.rizwan.weathertestapp.splashscreen;
+package com.pro.rizwan.weathertestapp.view.splashscreen;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.pro.rizwan.weathertestapp.R;
-import com.pro.rizwan.weathertestapp.homeactivity.HomeActivity;
+import com.pro.rizwan.weathertestapp.view.homeactivity.HomeActivity;
 
 public class SplashScreen extends AppCompatActivity {
 Intent homeScreenIntent;
